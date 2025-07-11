@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БЗМ — Главная</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__topbar">
+      <span class="header__contact">
+        <img src="img/vec/phone.svg" class="header__icon" alt="Телефон">
+        <a href="tel:+74957904411">+7 (495) 790 44 11</a>
+      </span>
+      <span class="header__contact">
+        <img src="img/vec/envelope.svg" class="header__icon" alt="Почта">
+        <a href="mailto:mrvd@bzmr.ru">mrvd@bzmr.ru</a>
+      </span>
+    </div>
+    <div class="header__main">
+      <a href="index.html" class="header__logo-link"><img src="img/vec/Logo.svg" alt="Логотип БЗМ" class="header__logo-img"></a>
+      <nav class="nav" id="nav">
+        <div class="nav__panel">
+          <ul>
+            <li><a href="ekspluatatsiya.html">Эксплуатация</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <svg width="32" height="32" viewBox="0 0 32 32"><rect y="6" width="32" height="4" rx="2"/><rect y="14" width="32" height="4" rx="2"/><rect y="22" width="32" height="4" rx="2"/></svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="articles">
+      <div class="articles__header">
+        <h1>Полезные статьи</h1>
+        <a href="ekspluatatsiya.html" class="see-all">Смотреть все <span class="see-all__arrow">→</span></a>
+      </div>
+      <div class="articles__list">
+        <a class="article-card" href="article.html">
+          <img src="img/rast/i1.png" alt="Основные характеристики металлорукавов">
+          <div class="article-card__content">
+            <div class="article-card__title">Основные характеристики металлорукавов</div>
+            <div class="article-card__date">06 Марта 2023</div>
+          </div>
+        </a>
+        <a class="article-card" href="article.html">
+          <img src="img/rast/i2.png" alt="Таблица химической стойкости металлорукавов">
+          <div class="article-card__content">
+            <div class="article-card__title">Таблица химической стойкости металлорукавов</div>
+            <div class="article-card__date">06 Марта 2023</div>
+          </div>
+        </a>
+        <a class="article-card" href="article.html">
+          <img src="img/rast/i3.png" alt="Правила установки и монтажа">
+          <div class="article-card__content">
+            <div class="article-card__title">Правила установки и монтажа</div>
+            <div class="article-card__date">06 Марта 2023</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div>
+        <img src="img/vec/Logo2.svg" alt="БЗМ" class="footer__logo" height="50">
+        <div class="footer__contacts">
+          <span>
+            <a href="tel:+74957904411">+7 (495) 790 44 11</a>
+            
+          </span>
+          <span>
+            <dev class="footer__callback">Обратный звонок</dev>
+            <img src="img/vec/phone.svg" class="footer__icon" alt="Телефон">
+          </span>
+          
+          <span>
+            <a href="mailto:mrvd@bzmr.ru">mrvd@bzmr.ru</a>
+          </span>
+        </div>
+        <div class="footer__desc">Для вопросов и предложений</div>
+        <div class="footer__address">Центральный офис:<br>г. Москва, 121596 г. Москва, вн. тер. г. муниципальный округ Можайский, ул. Толбухина, д. 10, корп. 2, пом. 1, комн. 5</div>
+        <div class="footer__schedule">График работы центрального офиса<br>пн.-пт.: с 9:00 до 18:00</div>
+        <div class="footer__schedule">График работы производства<br>пн.-пт.: с 8:00 до 16:30</div>
+      </div>
+      <div>
+        <div class="footer__section-title">Покупателям</div>
+        <div class="footer__links">
+          <a href="ekspluatatsiya.html">Эксплуатация</a>
+          <a href="#">Документация</a>
+          <a href="#">Новости</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Реквизиты</span>
+      <span>Политика конфиденциальности</span>
+    </div>
+  </footer>
+</body>
+</html> 

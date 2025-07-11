@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БЗМ — Контакты</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__topbar">
+      <span class="header__contact">
+        <img src="img/vec/phone.svg" class="header__icon" alt="Телефон">
+        <a href="tel:+74957904411">+7 (495) 790 44 11</a>
+      </span>
+      <span class="header__contact">
+        <img src="img/vec/envelope.svg" class="header__icon" alt="Почта">
+        <a href="mailto:mrvd@bzmr.ru">mrvd@bzmr.ru</a>
+      </span>
+    </div>
+    <div class="header__main">
+      <a href="index.html" class="header__logo-link"><img src="img/vec/Logo.svg" alt="Логотип БЗМ" class="header__logo-img"></a>
+      <nav class="nav" id="nav">
+        <div class="nav__panel">
+          <ul>
+            <li><a href="ekspluatatsiya.html">Эксплуатация</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <svg width="32" height="32" viewBox="0 0 32 32"><rect y="6" width="32" height="4" rx="2"/><rect y="14" width="32" height="4" rx="2"/><rect y="22" width="32" height="4" rx="2"/></svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="contacts-bg">
+      <section class="contacts-grid">
+        <div class="contacts-grid__left">
+          <nav class="breadcrumb">
+            <a href="index.html">Главная</a> / <span>Документы</span>
+          </nav>
+          <h1>Контакты</h1>
+          <div class="contacts-main__phone">
+            <span class="contacts-main__phone-main">+7 (495) 150 14 50</span>
+            <span class="contacts-main__callback">Обратный звонок <img src="img/vec/phone.svg" alt="" class="contacts-main__callback-icon"></span>
+          </div>
+          <div class="contacts-main__email"><a href="mailto:info@bzm32.ru">info@bzm32.ru</a></div>
+          <div class="contacts-main__desc">Для вопросов и предложений</div>
+          <div class="contacts-main__address-title">Центральный офис:</div>
+          <div class="contacts-main__address">г. Москва, 121596 г. Москва, вн. тер. г. муниципальный округ Можайский, ул. Толбухина, д. 10, корп. 2, пом. 1, комн. 11</div>
+          <div class="contacts-main__schedule-title">График работы центрального офиса</div>
+          <div class="contacts-main__schedule">пн.-пт.: с 9:00 до 18:00</div>
+          <div class="contacts-main__schedule-title">График работы производства</div>
+          <div class="contacts-main__schedule">пн.-пт.: с 8:00 до 16:30</div>
+          <button class="contacts-main__btn" disabled>Скачать реквизиты</button>
+        </div>
+        <div class="contacts-grid__right">
+          <div class="contacts-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b7e1b1e1b1e1b1e1b1e1b1e1b1e1b1e&amp;source=constructor" width="100%" height="320" frameborder="0" style="border-radius:12px;"></iframe>
+          </div>
+          <div class="contacts-cols">
+            <div>
+              <b>Доставка:</b><br>
+              <span class="contacts-col-phone">+7(495)150-14-50</span><br>
+              <b>Поддержка клиентов:</b><br>
+              <span class="contacts-col-phone">+7(495)150-14-50</span>
+            </div>
+            <div>
+              <b>Производство:</b><br>
+              <span class="contacts-col-phone">+7(495)150-14-50</span>
+            </div>
+            <div>
+              <b>Поддержка клиентов:</b><br>
+              <span class="contacts-col-phone">+7(495)150-14-50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div>
+        <img src="img/vec/Logo2.svg" alt="БЗМ" class="footer__logo" height="50">
+        <div class="footer__contacts">
+          <span>
+            <a href="tel:+74957904411">+7 (495) 790 44 11</a>
+            
+          </span>
+          <span>
+            <dev class="footer__callback">Обратный звонок</dev>
+            <img src="img/vec/phone.svg" class="footer__icon" alt="Телефон">
+          </span>
+          
+          <span>
+            <a href="mailto:mrvd@bzmr.ru">mrvd@bzmr.ru</a>
+          </span>
+        </div>
+        <div class="footer__desc">Для вопросов и предложений</div>
+        <div class="footer__address">Центральный офис:<br>г. Москва, 121596 г. Москва, вн. тер. г. муниципальный округ Можайский, ул. Толбухина, д. 10, корп. 2, пом. 1, комн. 5</div>
+        <div class="footer__schedule">График работы центрального офиса<br>пн.-пт.: с 9:00 до 18:00</div>
+        <div class="footer__schedule">График работы производства<br>пн.-пт.: с 8:00 до 16:30</div>
+      </div>
+      <div>
+        <div class="footer__section-title">Покупателям</div>
+        <div class="footer__links">
+          <a href="ekspluatatsiya.html">Эксплуатация</a>
+          <a href="#">Документация</a>
+          <a href="#">Новости</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Реквизиты</span>
+      <span>Политика конфиденциальности</span>
+    </div>
+  </footer>
+</body>
+</html> 
