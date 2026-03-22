@@ -1,29 +1,48 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
-  const body = document.body;
-
-  if (burger && nav) {
-    burger.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      body.classList.toggle('menu-open', nav.classList.contains('open'));
-    });
-    // Закрытие меню по клику на ссылку (для мобильных)
-    nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        body.classList.remove('menu-open');
-      });
-    });
-    // Закрытие по клику вне панели
-    document.addEventListener('click', function (e) {
-      if (nav.classList.contains('open')) {
-        const panel = nav.querySelector('.nav__panel');
-        if (!panel.contains(e.target) && !burger.contains(e.target)) {
-          nav.classList.remove('open');
-          body.classList.remove('menu-open');
-        }
-      }
-    });
-  }
-}); 
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим элементы
+    var burger = document.getElementById('burger');
+    var menu = document.getElementById('menuOverlay');
+    var closeBtn = document.getElementById('menuClose');
+    var body = document.body;
+    
+    // Проверяем, что элементы найдены
+    console.log('Бургер:', burger);
+    console.log('Меню:', menu);
+    
+    // Открытие меню
+    if (burger && menu) {
+        burger.onclick = function() {
+            menu.classList.add('active');
+            body.style.overflow = 'hidden';
+            console.log('Меню открыто');
+        };
+    }
+    
+    // Закрытие по крестику
+    if (closeBtn && menu) {
+        closeBtn.onclick = function() {
+            menu.classList.remove('active');
+            body.style.overflow = '';
+            console.log('Меню закрыто');
+        };
+    }
+    
+    // Закрытие по клику на фон
+    if (menu) {
+        menu.onclick = function(e) {
+            if (e.target === menu) {
+                menu.classList.remove('active');
+                body.style.overflow = '';
+            }
+        };
+    }
+    
+    // Закрытие по ссылкам
+    var links = document.querySelectorAll('.menu-nav a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function() {
+            menu.classList.remove('active');
+            body.style.overflow = '';
+        };
+    }
+});
