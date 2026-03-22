@@ -267,13 +267,13 @@ main {
 
 .contacts-right {
     flex: 2;
-    min-height: 400px; /* задаем минимальную высоту */
+    min-height: 400px;
     display: flex;
 }
 
 .contacts-map {
     width: 100%;
-    height: 100%; /* теперь карта будет занимать всю высоту родителя */
+    height: 100%;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -893,7 +893,17 @@ main {
     }
     
     .contacts-right {
-        min-height: 200px;
+        min-height: 400px;
+    }
+
+    .contacts-map {
+        height: 100%;
+        min-height: 400px;
+    }
+
+    .contacts-map iframe {
+        height: 100%;
+        min-height: 400px;
     }
 
     .contacts-departments__grid {
